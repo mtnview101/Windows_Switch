@@ -13,12 +13,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class NotSwitchWindows_LinkedHashSet {
 	static String in_browser = "Edge"; // "HtmlUnit" "Firefox" "Chrome"  "Safari"  "IE"  "Edge"
 	static WebDriver driver;
-       public static void main(String[] args) throws InterruptedException, IOException {
-              String url = "http://alex.academy/exercises/links/";
-        	  Browsers.setWebDriver(in_browser);
-        	  driver = Browsers.driver;
-        	  WebDriverWait wait = new WebDriverWait(driver,10); //Waits 10 seconds [max] 
-        	  driver.get(url);
+	
+	
+public static void main(String[] args) throws InterruptedException, IOException {
+	
+String url = "http://alex.academy/exercises/links/";
+Browsers.setWebDriver(in_browser);
+driver = Browsers.driver;
+WebDriverWait wait = new WebDriverWait(driver,10); //Waits 10 seconds [max] 
+driver.get(url);
 
 System.out.println("getWindowHandles().getClass(): "+driver.getWindowHandles().getClass());
 System.out.println("----------------------------------------------------------");
@@ -26,16 +29,14 @@ System.out.println("----------------------------------------------------------")
 System.out.println("Title: " + driver.getTitle() + ";\t URL: " + driver.getCurrentUrl() + ";\t Handle: " + driver.getWindowHandle());
 wait.until(ExpectedConditions.elementToBeClickable(By.id("id_link_top"))); //explicit wait for "element To Be Clickable"
 driver.findElement(By.id("id_link_top")).click();
-/*Thread.sleep(1000);
-//wait.until(ExpectedConditions.titleIs("alex.academy::qa"));
-*/
+
 System.out.println("Title: " + driver.getTitle() + ";\t\t URL: " + driver.getCurrentUrl() + ";\t\t\t Handle: " + driver.getWindowHandle());
 driver.navigate().back();
 
 driver.findElement(By.id("id_link_blank")).click(); 
 System.out.println("Title: " + driver.getTitle() + ";\t URL: " + driver.getCurrentUrl() + ";\t Handle: " + driver.getWindowHandle());
 
-             System.out.println("----------------------------------------------------------");
-             System.out.println("All Handles: " + driver.getWindowHandles());
-             driver.quit(); }}
+System.out.println("----------------------------------------------------------");
+System.out.println("All Handles: " + driver.getWindowHandles());
+driver.quit(); }}
 
