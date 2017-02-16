@@ -32,6 +32,7 @@ public class NewTabs_Robot {
         	  Browsers.setWebDriver(in_browser);
         	  driver = Browsers.driver;
         	  WebDriverWait wait = new WebDriverWait(driver,10); //Waits 10 seconds [max] 
+              driver.manage().timeouts().implicitlyWait(160, TimeUnit.SECONDS);
         	  driver.get(url);
 
         	  Robot r = new Robot();
@@ -45,54 +46,54 @@ if (osName.contains("windows")) {
 	                     r.keyRelease(KeyEvent.VK_CONTROL);
 	                     r.keyRelease(KeyEvent.VK_T);
 
-       System.out.println(osName);
+       System.out.println(osName); Thread.sleep(1000);
                          r.keyPress(KeyEvent.VK_CONTROL);// open TAB#2
                          r.keyPress(KeyEvent.VK_T);
                          r.keyRelease(KeyEvent.VK_CONTROL);
                          r.keyRelease(KeyEvent.VK_T);
 
-       System.out.println(osName);
+       System.out.println(osName); Thread.sleep(1000);
                          r.keyPress(KeyEvent.VK_CONTROL);// open TAB#3
                          r.keyPress(KeyEvent.VK_T);
                          r.keyRelease(KeyEvent.VK_CONTROL);
                          r.keyRelease(KeyEvent.VK_T);
 
-       System.out.println(osName);
+       System.out.println(osName); Thread.sleep(1000);
                          r.keyPress(KeyEvent.VK_CONTROL);// open TAB#4
                          r.keyPress(KeyEvent.VK_T);
                          r.keyRelease(KeyEvent.VK_CONTROL);
                          r.keyRelease(KeyEvent.VK_T);
 
-       System.out.println(osName);
+       System.out.println(osName); Thread.sleep(1000);
                          r.keyPress(KeyEvent.VK_CONTROL);// open TAB#5
                          r.keyPress(KeyEvent.VK_T);
                          r.keyRelease(KeyEvent.VK_CONTROL);
                          r.keyRelease(KeyEvent.VK_T);
 
-       System.out.println(osName);
+       System.out.println(osName); Thread.sleep(1000);
                          r.keyPress(KeyEvent.VK_CONTROL);// open TAB#6
                          r.keyPress(KeyEvent.VK_T);
                          r.keyRelease(KeyEvent.VK_CONTROL);
                          r.keyRelease(KeyEvent.VK_T);
 
-       System.out.println(osName);
+       System.out.println(osName); Thread.sleep(1000);
                          r.keyPress(KeyEvent.VK_CONTROL);// open TAB#7
                          r.keyPress(KeyEvent.VK_T);
                          r.keyRelease(KeyEvent.VK_CONTROL);
                          r.keyRelease(KeyEvent.VK_T);
 
-       System.out.println(osName);
+       System.out.println(osName); Thread.sleep(1000);
                          r.keyPress(KeyEvent.VK_CONTROL);// open TAB#8
                          r.keyRelease(KeyEvent.VK_CONTROL);
                          r.keyRelease(KeyEvent.VK_T);
 
-       System.out.println(osName);
+       System.out.println(osName); Thread.sleep(1000);
                          r.keyPress(KeyEvent.VK_CONTROL);// open TAB#9
                          r.keyPress(KeyEvent.VK_T);
                          r.keyRelease(KeyEvent.VK_CONTROL);
                          r.keyRelease(KeyEvent.VK_T);
 
-       System.out.println(osName);
+       System.out.println(osName); Thread.sleep(1000);
 				         r.keyPress(KeyEvent.VK_CONTROL);// open TAB#10
 				         r.keyPress(KeyEvent.VK_T);
 				         r.keyRelease(KeyEvent.VK_CONTROL);
